@@ -58,7 +58,11 @@ body {
             font-size: 60px;
         }
     }
-
+    .mobilemenu{
+      display: none;
+      font-size: 20px;
+      color: $offwhite;
+    }
     .menu {
         float: right;
         color: $orange;
@@ -333,7 +337,7 @@ body {
 .option1:hover,
 .options:hover {
     background-color: $maincolor;
-    color: $maincolor;
+    color: darken($offwhite, 20);
 }
 /*sizes dropdown menu*/
 .sizes {
@@ -382,13 +386,13 @@ body {
 }
 /*hover animation*/
 .sizes:hover {
-    color: $maincolor;
+  color: darken($offwhite, 20);
     background-color: $maincolor;
 }
 
 .dropdown a:hover {
     background-color: $maincolor;
-    color: $maincolor;
+    color: darken($offwhite, 20);
 }
 
 .blockcontainer:hover .dropdown {
@@ -412,6 +416,17 @@ body {
     left:-30px;
     bottom:0px;
     padding-right: 50px;
+    #cart{
+      margin-bottom: 10px;
+      .cartitem{
+        border-bottom: 2px solid $offwhite;
+        text-align: left;
+        margin-bottom: 10px;
+        p{
+          display: inline;
+        }
+      }
+    }
 }
 /* footer */
 footer,.contact{
@@ -457,4 +472,25 @@ footer,.contact{
         width: 80%;
         margin: 40px auto;
     }
+    .menumain{
+      display: none;
+    }
+    .header .mobilemenu{
+      display: inline-block;
+      position: absolute;
+      top: -50px;
+      right: 10px;
+      .menu{
+        display: none;
+        position: absolute;
+        margin-left: -200px;
+        margin-top: -80px;
+
+      }
+    }
+    .header {
+      img{
+        display: none;
+    }
+  }
 }

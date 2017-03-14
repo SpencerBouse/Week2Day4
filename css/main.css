@@ -46,6 +46,10 @@ body {
     margin-top: 20px; }
     .header h1 span {
       font-size: 60px; }
+  .header .mobilemenu {
+    display: none;
+    font-size: 20px;
+    color: #cbcbcb; }
   .header .menu {
     float: right;
     color: #cbcbcb;
@@ -279,7 +283,7 @@ body {
 .option1:hover,
 .options:hover {
   background-color: #2e3d3d;
-  color: #2e3d3d; }
+  color: #989898; }
 
 /*sizes dropdown menu*/
 .sizes {
@@ -325,12 +329,12 @@ body {
 
 /*hover animation*/
 .sizes:hover {
-  color: #2e3d3d;
+  color: #989898;
   background-color: #2e3d3d; }
 
 .dropdown a:hover {
   background-color: #2e3d3d;
-  color: #2e3d3d; }
+  color: #989898; }
 
 .blockcontainer:hover .dropdown {
   display: block;
@@ -351,6 +355,14 @@ body {
   left: -30px;
   bottom: 0px;
   padding-right: 50px; }
+  .prices #cart {
+    margin-bottom: 10px; }
+    .prices #cart .cartitem {
+      border-bottom: 2px solid #cbcbcb;
+      text-align: left;
+      margin-bottom: 10px; }
+      .prices #cart .cartitem p {
+        display: inline; }
 
 /* footer */
 footer .copyright, .contact .copyright {
@@ -384,4 +396,18 @@ footer .social, .contact .social {
 @media screen and (max-width: 900px) {
   .outer {
     width: 80%;
-    margin: 40px auto; } }
+    margin: 40px auto; }
+  .menumain {
+    display: none; }
+  .header .mobilemenu {
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    right: 10px; }
+    .header .mobilemenu .menu {
+      display: none;
+      position: absolute;
+      margin-left: -200px;
+      margin-top: -80px; }
+  .header img {
+    display: none; } }

@@ -5,14 +5,17 @@ var beforeTaxes = document.getElementById('beforeTax');
 var afterTaxes = document.getElementById('afterTax');
 var cart = document.getElementById('cart');
 var menu = document.getElementById('bars');
+
 var onePressed = false;
 var twoPressed = false;
 var threePressed = false;
 var menustatus = false;
+
 var subtotal = 0;
 var idnumber = 0;
+
 var cartArray = [];
-var d = new Date();
+
 var shirt1 = {
   name:"Redboi",
   price:29,
@@ -20,12 +23,15 @@ var shirt1 = {
 }
 var shirt2 = {
   name:"Symphony of the Night",
-  price:19
+  price:19,
+  id:0
 }
 var shirt3 = {
   name:"Iron Pixel",
-  price:39
+  price:39,
+  id:0
 }
+
 function cartdiv(){
   string = '';
   cartArray.forEach(function(item){

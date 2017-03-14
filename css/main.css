@@ -344,6 +344,12 @@ body {
   display: block;
   animation: fadein 0.3s; }
 
+#carticon {
+  position: absolute;
+  top: -63px;
+  left: -3px;
+  width: 60px; }
+
 .prices {
   font-size: 20px;
   color: #cbcbcb;

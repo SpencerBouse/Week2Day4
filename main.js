@@ -5,11 +5,13 @@ var beforeTaxes = document.getElementById('beforeTax');
 var afterTaxes = document.getElementById('afterTax');
 var cart = document.getElementById('cart');
 var menu = document.getElementById('bars');
+var carticon = document.getElementById('carticon');
 
 var onePressed = false;
 var twoPressed = false;
 var threePressed = false;
 var menustatus = false;
+var cartstatus = false;
 
 var subtotal = 0;
 var idnumber = 0;
@@ -55,6 +57,16 @@ menu.addEventListener('click',function(){
   }else{
     document.getElementById('jsmenu').style.display = 'none';
     menustatus = false;
+  }
+})
+
+carticon.addEventListener('click',function(){
+  if(cartstatus === false){
+    document.getElementById('cart').style.display = 'block';
+    cartstatus = true;
+  }else{
+    document.getElementById('cart').style.display = 'none';
+    cartstatus = false;
   }
 })
 

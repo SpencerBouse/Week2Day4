@@ -13,6 +13,8 @@ var threePressed = false;
 var menustatus = false;
 var cartstatus = false;
 
+var d = new Date();
+
 var subtotal = 0;
 var idnumber = 0;
 
@@ -36,12 +38,14 @@ var shirt3 = {
 
 function cartdiv(){
   string = '';
+  var n = d.getDate();
+  var m = (d.getMonth())+1;
   cartArray.forEach(function(item){
     string+=`
     <div class="cartitem">
       <p>${item.name}</p>
       <p>$${item.price}</p>
-      <p id=${item.id}> </p>
+      <p class="right">${m}/${n}</p>
     </div>
     `;
   })

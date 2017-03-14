@@ -369,6 +369,8 @@ body {
       margin-bottom: 10px; }
       .prices #cart .cartitem p {
         display: inline; }
+      .prices #cart .cartitem .right {
+        margin-left: 20px; }
 
 /* footer */
 footer .copyright, .contact .copyright {
